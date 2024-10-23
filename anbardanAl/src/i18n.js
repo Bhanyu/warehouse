@@ -15,6 +15,14 @@ i18n
           portfolio: "Portfolio",
           catalog: "Catalog",
           contact: "Contact",
+                    kermogranit: "Kermogranite",
+                     fasad: "Fasad Coverings",
+                     mermer: "Marble",
+                     suse:"Glass",
+                     kerpic:"Brick",
+                     aksesuar:"Accessories"
+
+
         },
       },
       az: {
@@ -27,6 +35,13 @@ i18n
           portfolio: "Portfel",
           catalog: "Kataloq",
           contact: "Əlaqə",
+          kermogranit: "Kermogranit",
+                    fasad: "Fasad Uzlukler",
+                     mermer: "Mermer",
+                     suse:"Suse",
+                     kerpic:"Kerpic",
+                     aksesuar:"Aksesuarlar"
+
         },
       },
     },

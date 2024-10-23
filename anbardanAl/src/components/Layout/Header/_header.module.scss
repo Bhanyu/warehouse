@@ -3,26 +3,48 @@
 
 
 #mainHeader{
-
-    max-width: 100%;
+ 
+   
+  
+    // background-color: red;
     .container{
   
         max-width: 1600px;
         margin: 0 auto;
         .headerUpContent{
           
-            max-width: 100%;
+           
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 25px 0;
+           
+         
+            background-color: white;
+            height: 120px; /* Adjust this according to your header's height */
+            z-index: 1000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
             border-bottom: 1px solid rgba(83, 80, 80, 0.33);
+            @media (max-width:992px) {
+              padding: 12px 20px;
+              justify-content: space-between;
+              align-items: center;
+            }
             .headerLogo{
 max-width: 12%;
+@media (max-width:992px) {
+ max-width: 18%;
+}
 img{
     max-width: 100%;
 }
             }
+         nav{
+            @media (max-width:992px) {
+                display: none;
+               }
             .navigation{
                 max-width: 100%;
                 margin: 0 200px 0 50px;
@@ -43,7 +65,7 @@ img{
                             width: 0px;
                             height: 0px;
                             left: 0%;
-                            // display: none;
+                            display: none;
                             transition: all .5s;
                         }
                         &::before{
@@ -54,7 +76,7 @@ img{
                             width: 0px;
                             height: 0px;
                             right: 0%;
-                            // display: none;
+                            display: none;
                             transition: all .5s;
 
                         }
@@ -62,14 +84,14 @@ img{
                             &::after{
                                 left: -30%;
                                 top: 60%;
-                                // display: block;
+                                display: block;
                                 width: 20px;
                                 height: 20px;
                             }
                             &::before{
                                 right: -30%;
                                 bottom: 60%;
-                                // display: block;
+                                display: block;
                                 width: 20px;
                                 height: 20px;
                             }
@@ -91,26 +113,71 @@ img{
 
 
                         }
+
+&.productsLink{
+    position: relative;
+
+    &:hover{
+        .dropdown{
+            display: block;
+        }
+    }
+    .dropdown{
+        width: 500px;
+        position: absolute;
+        background-color:white;
+        display: none;
+        top: 110%;
+        transition: all .5s;
+        box-shadow: 0 5px 5px 0 rgba(8, 15, 52, .04);
+        .dropdownList{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          width: 100%;
+          padding: 15px 0 0;
+
+     
+          li{
+            margin: 12px 20px;
+            .dropdownLink{
+                font-size: 20px;
+                text-decoration: none;
+            }
+          }
+         
+        }
+      }
+}
+                       
                     }
                 }
             }
+         }
             .language{
-                background-color: red;
+             display: flex;
+             @media (max-width:992px) {
+                 display: none;
+            }
+          
                 button{
                     padding: 15px 18px;
-                    border-radius: 30px;
+                    // border-radius: 30px;
                     border:none;
-                    margin: 0 12px;
+                    margin: 0 5px;
                 }
             }
         }
         .headerDownContent{
             max-width: 1250px;
-            margin: 0 auto;
+            margin: 120px auto 0;
+            padding: 20px 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: aqua;
+            @media (max-width:992px) {
+                display: none;
+            }
             .contactLink{
                 max-width: 100%;
               
