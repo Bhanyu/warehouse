@@ -50,7 +50,8 @@ const goToNextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + swiperPost.length) % swiperPost.length);
   };
 return(
-    <div
+    <section id={styles.swiperPart}>
+      <div
     className={styles.swiperContainer}
     onTouchStart={handleTouchStart}
     onTouchMove={handleTouchMove}
@@ -78,6 +79,7 @@ return(
 <p>We work to make every corner of your home bring you happiness. With you since 2019!</p>
   </div>
     </div>
+    </section>
 
 
 )
