@@ -77,6 +77,17 @@ name:'Our Address'
                 );
               })}
           </div>
+          <div className={styles.formContact}>
+          <h2>Send a request, we will call you!</h2>
+            <div className={styles.innerContact}>
+            
+              <form action="">
+                <input type="text" placeholder='Your Name'/>
+                <input type="num" placeholder='Your Number'/>
+<button type='submit'>Send</button>
+              </form>
+            </div>
+          </div>
     </div>
 </section>
   )
