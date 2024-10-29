@@ -3,7 +3,13 @@ import styles from "./_home.module.scss"
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { useTranslation } from 'react-i18next';
 function Projects() {
+    const { t, i18n } = useTranslation(); // useTranslation hook-dan istifadə
+
+    const changeLanguage = (lang) => {
+      i18n.changeLanguage(lang); // Dil dəyişdirmək funksiyası
+    };
     const projectPosts = [
         {
             id:1,
@@ -54,8 +60,8 @@ function Projects() {
   return (
   <section id={styles.mainProjects}>
     <div className={styles.container}>
-        <h2 className={styles.title}>Our Projects</h2>
-        <p>Our goal is to create a happy environment for you.</p>
+        <h2 className={styles.title}>{t('project')}</h2>
+        <p>{t('text2')}</p>
         <Slider {...settings}>
             {
                 projectPosts.map((projectPost) => (
@@ -66,10 +72,10 @@ function Projects() {
             }
         </Slider>
         <h2 className={styles.articles}>
-        Useful Articles for You
+       {t('project2')}
         </h2>
         <p className={styles.articlesText}>
-        We are always ready to support you in all types of home repair.
+       {t('text3')}
         </p>
     </div>
   </section>

@@ -1,8 +1,13 @@
 import classNames from "classnames";
 import styles from "./_home.module.scss"
 import { useState,useEffect } from "react";
-
+import { useTranslation } from 'react-i18next';
 const Services = () => {
+  const { t, i18n } = useTranslation(); // useTranslation hook-dan istifadə
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang); // Dil dəyişdirmək funksiyası
+  };
   const [services, setServices] = useState([]);
 
   const [subServices,setSubServices] = useState([])
@@ -52,7 +57,7 @@ const Services = () => {
   return (
     <section id={styles.servicesPart}>
       <div className={styles.servicesContainer}>
-        <h2 className={styles.servicesTitle}>Our Services</h2>
+        <h2 className={styles.servicesTitle}>{t('service')}</h2>
        
           <div className={classNames("row", styles.fullServices)}>
             {services &&

@@ -8,16 +8,20 @@ import styles from "./_home.module.scss"
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { GoClock } from "react-icons/go";
-
+import { useTranslation } from 'react-i18next';
 function Contact() {
+  const { t, i18n } = useTranslation(); // useTranslation hook-dan istifadə
 
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang); // Dil dəyişdirmək funksiyası
+  };
 const contactObjs = [
     {
         id:1,
         icon:<IoLocationSharp />,
         text:"We are very close to you!",
         link:"Baku city, Davud Aslan 2A",
-name:'Our Address'
+name:t('address')
 
     },
     {
@@ -25,7 +29,7 @@ name:'Our Address'
         icon:<FaPhoneAlt />,
         text:"We are very close to you!",
         link:"Baku city, Davud Aslan 2A",
-        name:'Our Address'
+        name:t('phone')
 
     },
     {
@@ -33,7 +37,7 @@ name:'Our Address'
         icon:<MdOutlineMail />,
         text:"We are very close to you!",
         link:"Baku city, Davud Aslan 2A",
-        name:'Our Address'
+        name:t('emial')
 
     },
     {
@@ -41,7 +45,7 @@ name:'Our Address'
         icon:<GoClock />,
         text:"We are very close to you!",
         link:"Baku city, Davud Aslan 2A",
-        name:'Our Address'
+        name:t('oclock')
 
     },
 
@@ -78,13 +82,13 @@ name:'Our Address'
               })}
           </div>
           <div className={styles.formContact}>
-          <h2>Send a request, we will call you!</h2>
+          <h2>{t('call')}</h2>
             <div className={styles.innerContact}>
             
               <form action="">
                 <input type="text" placeholder='Your Name'/>
                 <input type="num" placeholder='Your Number'/>
-<button type='submit'>Send</button>
+<button type='submit'>{t('send')}</button>
               </form>
             </div>
           </div>

@@ -1,8 +1,13 @@
 
 import React, { useRef,useState } from "react";
 import styles from "./_home.module.scss"
-
+import { useTranslation } from 'react-i18next';
 const Swiper = ()=>{
+   const { t, i18n } = useTranslation(); // useTranslation hook-dan istifadə
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang); // Dil dəyişdirmək funksiyası
+  };
 const swiperPost = [
     {
         id: 1,
@@ -75,8 +80,8 @@ return(
 
   </div>
   <div className={styles.slideDesc}>
-<h1>Small touches, big changes.</h1>
-<p>We work to make every corner of your home bring you happiness. With you since 2019!</p>
+<h1>{t('head1')}</h1>
+<p>{t('text1')}</p>
   </div>
     </div>
     </section>

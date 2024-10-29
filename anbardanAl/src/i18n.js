@@ -20,8 +20,22 @@ i18n
                      mermer: "Marble",
                      suse:"Glass",
                      kerpic:"Brick",
-                     aksesuar:"Accessories"
-
+                     aksesuar:"Accessories",
+                     head1:"Small touches, big changes.",
+                     text1:"We work to make every corner of your home bring you happiness. With you since 2019!",
+service:"Our Services",
+project:"Our Projects",
+text2:"Our goal is to create a happy environment for you.",
+project2:"Useful Articles for You",
+text3:"We are always ready to support you in all types of home repair",
+calculator:"Tile Calculator",
+text4:"After entering the intended area or just the length and width, select the appropriate tile size and press the \'Calculate\' button..",
+address:"Our Address",
+phone:"Our Contact Methods",
+email:"Our Email Address",
+oclock:"Our Working Hours",
+call:"Send a request, we will call you!",
+send:"Send"
 
         },
       },
@@ -40,7 +54,22 @@ i18n
                      mermer: "Mermer",
                      suse:"Suse",
                      kerpic:"Kerpic",
-                     aksesuar:"Aksesuarlar"
+                     aksesuar:"Aksesuarlar",
+                     head1:"Kiçik toxunlar, böyük dəyişikliklər",
+                     text1:"Evinizin hər güşənin sizin üçün xoşbəxtlik gətirməsi üçün çalışırıq. 2019-cu ildən bəri sizinləyik!",
+                     service:"Xidmətlərimiz",
+                     project:"Layihələrimiz",
+                     text2:"Məqsədimiz sizə xoşbəxt mühit yaratmaqdır.",
+                     project2:"Sizə faydalı məqalələr",
+                     text3:"Biz sizə ev təmiri ilə bağlı bütün növ dəstəyi etməyə həmişə hazırıq.",
+                     calculator:"Plitə hesablayıcı",
+                     text4:"Nəzərdə tutulan sahəni və ya sadəcə uzunluq və eni daxil etdikdən sonra uyğun piltə ölçüsünü seçərək \"Hesabla\" düyməsinə basın..",
+                     address:"Ünvanımız",
+                     phone:"Əlaqə vasitələrimiz",
+                     email:"E-poçt ünvanımız",
+                     oclock:"İş saatlarımız",
+                     call:"İstək göndərin, biz sizə zəng edək!",
+                     send:"Göndər"
 
         },
       },

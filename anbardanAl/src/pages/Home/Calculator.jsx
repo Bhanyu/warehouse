@@ -2,12 +2,18 @@
 
 import React from 'react'
 import styles from "./_home.module.scss"
+import { useTranslation } from 'react-i18next';
 function Calculator() {
+    const { t, i18n } = useTranslation(); // useTranslation hook-dan istifadə
+
+    const changeLanguage = (lang) => {
+      i18n.changeLanguage(lang); // Dil dəyişdirmək funksiyası
+    };
   return (
     <section id={styles.calculatorPart}>
-        <h2 className={styles.title}>Tile Calculator</h2>
+        <h2 className={styles.title}>{t('calculator')}</h2>
         <p>
-        After entering the intended area or just the length and width, select the appropriate tile size and press the "Calculate" button..
+      {t('text4')}
 
         </p>
         <div className={styles.container}>
