@@ -1,13 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-
+import Request from './Request';
 const About = () => {
   const { t } = useTranslation();
 
   return (
     <section>
-      <h1>{t('about')}</h1>
-      <p>{t('aboutDesc')}</p>
+     <Request/>
     </section>
   );
 };

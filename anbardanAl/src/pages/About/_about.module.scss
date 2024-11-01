@@ -1,0 +1,114 @@
+#mainContact{
+    max-width: 100%;
+  
+    padding: 100px 0 60px;
+    @media (max-width:992px) {
+      padding: 60px 0 0 ;
+      }
+    .container{
+     max-width: 100%;
+      margin: 0px auto;
+      overflow: hidden;
+   
+     text-align: center;
+      @media (max-width:992px) {
+        margin: 0px 0;
+        max-width: 100%;
+        }
+     
+   
+    
+      .formContact{
+        background-color: red;
+        max-width: 1600px;
+        display: flex;
+        flex-direction: column;
+        background-image: url("https://www.anbardanal.az/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FsendPhoto.d3e72dde.png&w=1500&q=75");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 90px 0;
+        margin: 80px auto;
+        position: relative;
+        h2{
+          color:white;
+          margin-bottom: 50px;
+          font-family: "DM Sans", sans-serif;
+          @media (max-width:568px) {
+            position: absolute;
+            top: -12%;
+            color: black;
+            font-size: 20px;
+         text-align: center;
+          
+            width: 100%;
+          }
+        }
+        .innerContact{
+          max-width: 100%;
+    
+          form{
+     
+            max-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width:992px) {
+      flex-direction: column;
+      }
+            input{
+              padding: 20px 15px;
+              border-radius: 10px;
+              margin: 0 12px;
+              width: 30%;
+              border: none;
+              outline: none;
+              @media (max-width:568px) {
+               width: 90%;
+               margin: 12px 0;
+               padding: 15px ;
+                }
+                @media (min-width:569px) and (max-width:992px){
+                  width: 70%;
+                  margin: 12px 0;
+                  padding: 15px ;
+                   }
+            }
+            button{
+            width: 10%;
+            padding: 20px 0;
+            border: none;
+            outline: none;
+            margin: 0 12px;
+            background-color:#333A53 ;
+              border-radius: 10px;
+              color: white;
+              font-family: "DM Sans", sans-serif;
+              @media (max-width:568px) {
+             width: 90%;
+             margin: 12px 0;
+             padding: 15px 0;
+             background-color:#f9af3a ;
+             transition: all .3s;
+             &:hover{
+              background-color: #333A53;
+             }
+                }
+                @media (min-width:569px) and (max-width:992px){
+                  width: 70%;
+                  margin: 12px 0;
+                  padding: 15px ;
+                  transition: all .3s;
+                  background-color:#f9af3a ;
+            &:hover{
+              background-color: #333A53;
+            }
+                   }
+            }
+          }
+        }
+        
+      }
+  
+    }
+  }
