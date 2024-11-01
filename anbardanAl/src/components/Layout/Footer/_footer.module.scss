@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+#singleFoot{
+    max-width: 100%;
+
+    border-top: 1px solid #EFEFEF;
+    .container{
+        max-width: 1200px;
+      
+        margin: 0 auto;
+        font-family: "DM Sans", sans-serif;
+        display: flex;
+        flex-direction: column;
+        .footerContent{
+      
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding:70px 0;
+         
+           @media (max-width:768px) {
+           justify-content: center;
+          }
+            .footLogo{
+width: 15%;
+@media (max-width:992px) {
+    display: none;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+            }
+            .sideList{
+                display: flex;
+                justify-content: space-between;
+                @media (max-width:768px) {
+                  flex-direction: column;
+                  align-items: center;
+              
+                  max-width: 100%;
+                }
+                @media (min-width:769px) and (max-width:992px) {
+                    flex-wrap: wrap;
+                  }
+                ul{
+                    margin: 0 50px;
+                    @media (max-width:768px) {
+                        margin: 30px 20px;
+                        text-align: center;
+                      }
+                    li{
+                        list-style-type: none;
+                        margin: 10px 0;
+                        color: #333;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                        @media (max-width:568px) {
+                            font-size: 18px;
+                             }
+                        @media (min-width:569px) and (max-width:992px) {
+                          
+                            font-size: 25px;
+                          }
+                      
+                        span{
+                            margin-right: 10px;
+                            font-size: 15px;
+                        }
+                        .footLink{
+                            text-decoration: none;
+                            color: #333;
+                        }
+                        &:first-child{
+                            margin-bottom: 30px;
+                            color:  #333;
+                            
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 22px;
+                            @media (max-width:768px) {
+                                font-size: 35px;
+                               }
+                        }
+                    }
+                }
+            }
+        }
+        .footLeg{
+            text-align: center;
+            padding: 30px;
+            color: #333;
+        }
+    }
+}
