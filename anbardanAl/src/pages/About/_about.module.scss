@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
 #mainContact{
     max-width: 100%;
   
@@ -112,3 +118,92 @@
   
     }
   }
+
+  #aboutBg{
+    background-image: url('https://www.anbardanal.az/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FaboutUsTitle.0f82a5b5.png&w=1500&q=75');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  height: 400px;
+position: relative;
+  @media (max-width:568px) {
+   height:250px;
+
+
+    width: 100%;
+    // background-size: 100%;
+    align-items: center;
+  }
+  .container{
+    width: 100%;
+
+ padding: 0;
+ top: 57%;
+ position: absolute;
+ @media (max-width:768px) {
+ top: 80%;
+    }
+    @media (min-width:769px) and (max-width:1080px) {
+   top: 73%;
+        }
+  //   @media (min-width:569px) and (max-width:768px) {
+  //  top: 80%;
+  //       }
+    .aboutTitle{
+      max-width: 30%;
+      background-color: white;
+      border-radius: 10px 10px 0 0;
+      text-align: center;
+      margin: 0 auto;
+      padding: 40px 0;
+      @media (max-width:568px) {
+     padding: 10px 0;
+     max-width: 60%;
+       }
+       @media (min-width:569px) and (max-width:768px) {
+        padding: 30px 0;
+        max-width: 60%;
+          }
+          @media (min-width:769px) and (max-width:1080px) {
+            padding: 30px 0;
+            max-width: 50%;
+              }
+      h1{
+        color: #292f36;
+        font-family: "Nunito", serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 42px;
+        @media (max-width:568px) {
+       font-size: 18px;
+         }
+
+      }
+      p{
+        
+
+        font-family: "DM Sans", sans-serif;
+
+    font-size: 22px;
+    font-style: normal;
+    line-height: 26px;
+    @media (max-width:1080px) {
+   display: none;
+     }
+    span{
+      font-family: "DM Sans", sans-serif;
+      font-size: 22px;
+      font-style: normal;
+      line-height: 26px;
+      color: #272727;
+    font-weight: 500;
+    }
+      
+    }
+  }
+  
+}
+}
